@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+	<title>Pricing Strategy — Comparely</title>
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+	<script src="https://cdn.tailwindcss.com"></script>
+	<link rel="stylesheet" href="styles.css" />
+	<link rel="stylesheet" href="https://unpkg.com/aos@2.3.4/dist/aos.css" />
+	<script>
+		tailwind.config = { theme: { extend: { fontFamily: { sans: ['Inter', 'ui-sans-serif', 'system-ui'] } } } };
+	</script>
+</head>
+<body class="font-sans antialiased">
+	<div id="navbar"></div>
+
+	<main class="pt-24">
+		<div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8" id="pricing-container">
+			<div class="flex items-end justify-between gap-4 mb-6">
+				<div>
+					<h1 class="text-2xl font-bold">AI Pricing Strategy</h1>
+					<p class="text-slate-600">Generate data-driven price recommendations with predicted sales and margin.</p>
+				</div>
+				<button id="generate-strategy" class="btn-gradient rounded-md px-4 py-2 font-medium">Generate New Strategy</button>
+			</div>
+
+			<div class="grid lg:grid-cols-3 gap-6 items-start">
+				<div class="lg:col-span-2 card p-4 rounded-2xl" data-aos="fade-up">
+					<h3 class="font-semibold mb-3">Price vs Predicted Sales</h3>
+					<canvas id="pricing-chart" height="260"></canvas>
+				</div>
+				<div class="space-y-4">
+					<div class="card p-4 rounded-2xl grid grid-cols-3 gap-3 text-center" data-aos="fade-left">
+						<div class="p-3 rounded-lg bg-blue-50">
+							<p class="text-xs text-slate-600">Recommended Price</p>
+							<p class="text-xl font-bold" id="reco-price">₹—</p>
+						</div>
+						<div class="p-3 rounded-lg bg-emerald-50">
+							<p class="text-xs text-slate-600">Expected Sales Δ</p>
+							<p class="text-xl font-bold" id="reco-sales">—%</p>
+						</div>
+						<div class="p-3 rounded-lg bg-purple-50">
+							<p class="text-xs text-slate-600">Predicted Margin</p>
+							<p class="text-xl font-bold" id="reco-margin">—%</p>
+						</div>
+					</div>
+					<div class="ai-box p-4 rounded-2xl text-slate-800" data-aos="fade-left">
+						<p class="text-sm">Heuristic logic: lowers price when competitors are cheaper with higher stock; raises price on low stock; nudges price down for high inventory.</p>
+					</div>
+				</div>
+			</div>
+		</div>
+	</main>
+
+	<div id="footer"></div>
+
+	<script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+	<script src="https://unpkg.com/aos@2.3.4/dist/aos.js"></script>
+	<script src="script.js"></script>
+</body>
+</html>

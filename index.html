@@ -1,0 +1,461 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+	<title>Comparely — AI-powered Insights</title>
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+	<script src="https://cdn.tailwindcss.com"></script>
+	<link rel="stylesheet" href="styles.css" />
+	<link rel="stylesheet" href="https://unpkg.com/aos@2.3.4/dist/aos.css" />
+	<script>
+		tailwind.config = { theme: { extend: { fontFamily: { sans: ['Inter', 'ui-sans-serif', 'system-ui'] } } } };
+	</script>
+</head>
+
+<body class="font-sans antialiased">
+	<div id="navbar"></div>
+
+	<main class="pt-24">
+		<section class="relative overflow-hidden">
+			<div
+				class="absolute -top-24 -left-24 w-96 h-96 rounded-full bg-gradient-to-br from-lime-200 to-emerald-200 blur-3xl opacity-60">
+			</div>
+			<div
+				class="absolute -bottom-24 -right-24 w-[28rem] h-[28rem] rounded-full bg-gradient-to-br from-emerald-200 to-lime-200 blur-3xl opacity-60">
+			</div>
+
+			<div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+				<div class="grid md:grid-cols-2 gap-10 items-center">
+					<div data-aos="fade-up" class="space-y-6">
+						<p
+							class="text-sm inline-flex items-center gap-2 px-3 py-1 rounded-full bg-blue-50 text-blue-700 border border-blue-200">
+							AI for CPG • Retail • D2C</p>
+						<h1 class="text-4xl sm:text-5xl font-extrabold leading-tight">
+							<span class="gradient-text">AI-powered Insights</span> for Smarter Brand Decisions.
+						</h1>
+						<p class="text-slate-600 text-lg">Track availability across pincodes, compare competitors, and
+							optimize pricing with AI-style recommendations.</p>
+						<div class="flex flex-wrap gap-3">
+							<a class='inline-flex items-center px-5 py-3 rounded-md btn-gradient'
+								href='register'>Register Now</a>
+							<a class='inline-flex items-center px-5 py-3 rounded-md border border-slate-300 text-slate-800 hover:bg-slate-50'
+								href='availability'>Explore Insights</a>
+						</div>
+						<div class="flex items-center gap-6 text-slate-500">
+							<div class="flex -space-x-2">
+								<span class="w-7 h-7 rounded-full bg-blue-500/20 border border-blue-300"></span>
+								<span class="w-7 h-7 rounded-full bg-purple-500/20 border border-purple-300"></span>
+								<span class="w-7 h-7 rounded-full bg-emerald-500/20 border border-emerald-300"></span>
+							</div>
+							<p class="text-sm">Trusted mock demo • No backend required</p>
+						</div>
+					</div>
+					<div data-aos="fade-left" class="relative">
+						<div class="card p-6 rounded-2xl">
+							<img src="https://images.unsplash.com/photo-1557821552-17105176677c?q=80&w=1600&auto=format&fit=crop"
+								alt="Dashboard" class="rounded-xl w-full h-72 object-cover">
+							<div class="mt-4 grid grid-cols-3 gap-3 text-center">
+								<div class="p-3 rounded-lg bg-blue-50 text-blue-700">
+									<p class="text-2xl font-bold">3</p>
+									<p class="text-xs">Pages of Insights</p>
+								</div>
+								<div class="p-3 rounded-lg bg-purple-50 text-purple-700">
+									<p class="text-2xl font-bold">6+</p>
+									<p class="text-xs">Charts & Tables</p>
+								</div>
+								<div class="p-3 rounded-lg bg-emerald-50 text-emerald-700">
+									<p class="text-2xl font-bold">100%</p>
+									<p class="text-xs">Static & Responsive</p>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+
+		<section class="mt-20">
+			<div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+				<h2 class="text-2xl font-bold text-slate-900 mb-6">The Problems</h2>
+				<div class="grid md:grid-cols-3 gap-6">
+					<a class='card p-6 rounded-2xl block' data-aos='fade-up' href='availability'>
+						<div class="w-10 h-10 rounded bg-blue-100 text-blue-700 grid place-items-center mb-4">📦</div>
+						<h3 class="font-semibold mb-2">Product Availability</h3>
+						<p class="text-slate-600 text-sm">Search by pincode or product. View stock status and
+							darkstore-level volumes.</p>
+					</a>
+					<a class='card p-6 rounded-2xl block' data-aos-delay='100' data-aos='fade-up' href='competitors'>
+						<div class="w-10 h-10 rounded bg-purple-100 text-purple-700 grid place-items-center mb-4">📊
+						</div>
+						<h3 class="font-semibold mb-2">Competitor Insights</h3>
+						<p class="text-slate-600 text-sm">Compare your brand with competitors and get AI-style
+							recommendations.</p>
+					</a>
+					<a class='card p-6 rounded-2xl block' data-aos-delay='200' data-aos='fade-up' href='pricing'>
+						<div class="w-10 h-10 rounded bg-emerald-100 text-emerald-700 grid place-items-center mb-4">💹
+						</div>
+						<h3 class="font-semibold mb-2">Pricing Strategies</h3>
+						<p class="text-slate-600 text-sm">Generate dynamic pricing suggestions with predicted sales and
+							margins.</p>
+					</a>
+				</div>
+			</div>
+		</section>
+
+		<section class="mt-20">
+			<div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+				<h2 class="text-2xl font-bold text-slate-900 mb-6">How Comparely Solves It</h2>
+				<p class="text-slate-600 text-lg">Track availability across pincodes, compare competitors, and optimize
+					pricing with AI-style recommendations.</p>
+
+				<h2 class="text-2xl font-bold text-slate-900 mb-3 mt-6">(1) Comparely Stock Out Alert</h2>
+				<p class="text-slate-600 text-lg mb-6">Search by pincode or product. View stock status across darkstores
+					in real-time.</p>
+
+				<div class="max-w-7xl mx-auto bg-white shadow-lg rounded-xl p-6 flex flex-col md:flex-row gap-6">
+
+					<!-- Table Section -->
+					<div class="flex-1 bg-gray-50 rounded-lg p-4">
+						<h2 class="text-lg font-semibold mb-4">Product</h2>
+						<div class="overflow-x-auto">
+							<table class="min-w-full border border-gray-200 text-sm text-gray-700">
+								<thead class="bg-gray-100 text-gray-800">
+									<tr>
+										<th class="px-4 py-2 text-left">Product</th>
+										<th class="px-4 py-2 text-left">Pincode</th>
+										<th class="px-4 py-2 text-left">Status</th>
+										<th class="px-4 py-2 text-left">Stock</th>
+									</tr>
+								</thead>
+								<tbody>
+									<tr class="border-t">
+										<td class="px-4 py-2">Cold Drink 500ml</td>
+										<td class="px-4 py-2">411001</td>
+										<td class="px-4 py-2"><span
+												class="bg-green-100 text-green-800 px-2 py-1 rounded-full text-xs font-medium">In
+												stock</span></td>
+										<td class="px-4 py-2">45</td>
+									</tr>
+									<tr class="border-t">
+										<td class="px-4 py-2">Chips 100g</td>
+										<td class="px-4 py-2">411002</td>
+										<td class="px-4 py-2"><span
+												class="bg-green-100 text-green-800 px-2 py-1 rounded-full text-xs font-medium">In
+												stock</span></td>
+										<td class="px-4 py-2">20</td>
+									</tr>
+									<tr class="border-t">
+										<td class="px-4 py-2">Juice 1L</td>
+										<td class="px-4 py-2">411003</td>
+										<td class="px-4 py-2"><span
+												class="bg-yellow-100 text-yellow-800 px-2 py-1 rounded-full text-xs font-medium">Low
+												stock</span></td>
+										<td class="px-4 py-2">10</td>
+									</tr>
+									<tr class="border-t">
+										<td class="px-4 py-2">Cookies 200g</td>
+										<td class="px-4 py-2">411001</td>
+										<td class="px-4 py-2"><span
+												class="bg-green-100 text-green-800 px-2 py-1 rounded-full text-xs font-medium">In
+												stock</span></td>
+										<td class="px-4 py-2">55</td>
+									</tr>
+									<tr class="border-t">
+										<td class="px-4 py-2">Energy Bar</td>
+										<td class="px-4 py-2">411002</td>
+										<td class="px-4 py-2"><span
+												class="bg-yellow-100 text-yellow-800 px-2 py-1 rounded-full text-xs font-medium">Low
+												stock</span></td>
+										<td class="px-4 py-2">12</td>
+									</tr>
+									<tr class="border-t">
+										<td class="px-4 py-2">Mineral Water 1L</td>
+										<td class="px-4 py-2">411003</td>
+										<td class="px-4 py-2"><span
+												class="bg-green-100 text-green-800 px-2 py-1 rounded-full text-xs font-medium">In
+												stock</span></td>
+										<td class="px-4 py-2">70</td>
+									</tr>
+								</tbody>
+							</table>
+						</div>
+					</div>
+
+					<!-- Chart Section -->
+					<div class="w-full md:w-1/3 bg-gray-50 rounded-lg p-4">
+						<h3 class="text-lg font-semibold mb-4">Stock by Pincode</h3>
+						<canvas id="stockChart" height="250"></canvas>
+					</div>
+
+				</div>
+
+				<!-- Chart.js Script -->
+				<script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+				<script>
+					const ctx3 = document.getElementById('stockChart').getContext('2d');
+					new Chart(ctx3, {
+						type: 'bar',
+						data: {
+							labels: ['411001', '411002', '411003'],
+							datasets: [{
+								label: 'Total Stock by Pincode',
+								data: [100, 32, 80],
+								backgroundColor: 'rgba(59,130,246,0.7)',
+								borderRadius: 6
+							}]
+						},
+						options: {
+							responsive: true,
+							scales: {
+								y: { beginAtZero: true, grid: { color: 'rgba(0,0,0,0.05)' } },
+								x: { grid: { display: false } }
+							},
+							plugins: {
+								legend: {
+									position: 'top',
+									labels: { boxWidth: 15, font: { size: 12 } }
+								}
+							}
+						}
+					});
+				</script>
+                <h2 class="text-2xl font-bold text-slate-900 mb-3 mt-6">(1) Competitor Insights</h2>
+				<p class="text-slate-600 text-lg mb-6">Search by pincode or product. View stock status across darkstores
+					in real-time.</p>
+				<div class="max-w-7xl mx-auto bg-white shadow-lg rounded-xl p-6 flex flex-col md:flex-row gap-6">
+                  
+					
+					<div class="flex-1 bg-gray-50 rounded-lg p-4">
+						
+						<div class="overflow-x-auto">
+							<table class="min-w-full border border-gray-200 text-sm text-gray-700">
+								<thead class="bg-gray-100 text-gray-800">
+									<tr>
+										<th class="px-4 py-2 text-left">Product</th>
+										<th class="px-4 py-2 text-left">Pincode</th>
+										<th class="px-4 py-2 text-left">Your Price</th>
+										<th class="px-4 py-2 text-left">Competitor A</th>
+										<th class="px-4 py-2 text-left">Competitor B</th>
+										<th class="px-4 py-2 text-left">Your Stock</th>
+										<th class="px-4 py-2 text-left">A Stock</th>
+										<th class="px-4 py-2 text-left">B Stock</th>
+									</tr>
+								</thead>
+								<tbody>
+									<tr class="border-t">
+										<td class="px-4 py-2">Cold Drink 500ml</td>
+										<td class="px-4 py-2">411001</td>
+										<td class="px-4 py-2">40</td>
+										<td class="px-4 py-2">38</td>
+										<td class="px-4 py-2">39</td>
+										<td class="px-4 py-2">45</td>
+										<td class="px-4 py-2">60</td>
+										<td class="px-4 py-2">52</td>
+									</tr>
+									<tr class="border-t">
+										<td class="px-4 py-2">Chips 100g</td>
+										<td class="px-4 py-2">411002</td>
+										<td class="px-4 py-2">20</td>
+										<td class="px-4 py-2">18</td>
+										<td class="px-4 py-2">19</td>
+										<td class="px-4 py-2">20</td>
+										<td class="px-4 py-2">50</td>
+										<td class="px-4 py-2">42</td>
+									</tr>
+									<tr class="border-t">
+										<td class="px-4 py-2">Juice 1L</td>
+										<td class="px-4 py-2">411003</td>
+										<td class="px-4 py-2">90</td>
+										<td class="px-4 py-2">85</td>
+										<td class="px-4 py-2">87</td>
+										<td class="px-4 py-2">10</td>
+										<td class="px-4 py-2">30</td>
+										<td class="px-4 py-2">26</td>
+									</tr>
+									<tr class="border-t">
+										<td class="px-4 py-2">Cookies 200g</td>
+										<td class="px-4 py-2">411001</td>
+										<td class="px-4 py-2">35</td>
+										<td class="px-4 py-2">34</td>
+										<td class="px-4 py-2">33</td>
+										<td class="px-4 py-2">55</td>
+										<td class="px-4 py-2">48</td>
+										<td class="px-4 py-2">60</td>
+									</tr>
+									<tr class="border-t">
+										<td class="px-4 py-2">Energy Bar</td>
+										<td class="px-4 py-2">411002</td>
+										<td class="px-4 py-2">25</td>
+										<td class="px-4 py-2">23</td>
+										<td class="px-4 py-2">22</td>
+										<td class="px-4 py-2">12</td>
+										<td class="px-4 py-2">22</td>
+										<td class="px-4 py-2">18</td>
+									</tr>
+									<tr class="border-t">
+										<td class="px-4 py-2">Mineral Water 1L</td>
+										<td class="px-4 py-2">411003</td>
+										<td class="px-4 py-2">20</td>
+										<td class="px-4 py-2">19</td>
+										<td class="px-4 py-2">18</td>
+										<td class="px-4 py-2">70</td>
+										<td class="px-4 py-2">65</td>
+										<td class="px-4 py-2">75</td>
+									</tr>
+								</tbody>
+							</table>
+						</div>
+					</div>
+
+					<!-- Chart Section -->
+					<div class="w-full md:w-1/3 bg-gray-50 rounded-lg p-4">
+						<h3 class="text-lg font-semibold mb-4">Availability Comparison</h3>
+						<canvas id="availabilityChart" height="250"></canvas>
+					</div>
+
+				</div>
+
+				<!-- Add this script once at the bottom of your page -->
+				<script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+				<script>
+					const ctx = document.getElementById('availabilityChart').getContext('2d');
+					new Chart(ctx, {
+						type: 'bar',
+						data: {
+							labels: [
+								'Cold Drink 500ml',
+								'Chips 100g',
+								'Juice 1L',
+								'Cookies 200g',
+								'Energy Bar',
+								'Mineral Water 1L'
+							],
+							datasets: [
+								{
+									label: 'Your Brand',
+									data: [45, 20, 10, 55, 12, 70],
+									backgroundColor: '#3b82f6'
+								},
+								{
+									label: 'Competitor A',
+									data: [60, 50, 30, 48, 22, 65],
+									backgroundColor: '#22c55e'
+								},
+								{
+									label: 'Competitor B',
+									data: [52, 42, 26, 60, 18, 75],
+									backgroundColor: '#facc15'
+								}
+							]
+						},
+						options: {
+							responsive: true,
+							scales: {
+								y: { beginAtZero: true }
+							},
+							plugins: {
+								legend: {
+									position: 'top',
+									labels: { boxWidth: 15, font: { size: 12 } }
+								}
+							}
+						}
+					});
+				</script>
+				<h2 class="text-2xl font-bold text-slate-900 mb-3 mt-6">(3)AI Pricing Strategy </h2>
+				<p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Dolor, libero asperiores facere commodi repellat quae debitis soluta hic voluptatibus est?j</p>
+				<div class="max-w-7xl mx-auto bg-white shadow-lg rounded-xl p-6 flex flex-col md:flex-row gap-6">
+
+					<!-- Chart Section -->
+					<div class="flex-1 bg-gray-50 rounded-lg p-4">
+						<h2 class="text-sm font-semibold mb-4 text-gray-800">Price vs Predicted Sales</h2>
+						<canvas id="priceSalesChart" height="300"></canvas>
+					</div>
+
+					<!-- Side Info Section -->
+					<div class="w-full md:w-1/3 flex flex-col gap-4">
+
+						<!-- Metric Cards -->
+						<div class="grid grid-cols-3 gap-3">
+							<div class="bg-indigo-50 border border-indigo-100 rounded-lg p-3 text-center shadow-sm">
+								<p class="text-xs text-gray-500 font-medium">Recommended Price</p>
+								<p class="text-lg font-semibold text-gray-800 mt-1">₹81</p>
+							</div>
+							<div class="bg-green-50 border border-green-100 rounded-lg p-3 text-center shadow-sm">
+								<p class="text-xs text-gray-500 font-medium">Expected Sales Δ</p>
+								<p class="text-lg font-semibold text-gray-800 mt-1">5%</p>
+							</div>
+							<div class="bg-yellow-50 border border-yellow-100 rounded-lg p-3 text-center shadow-sm">
+								<p class="text-xs text-gray-500 font-medium">Predicted Margin</p>
+								<p class="text-lg font-semibold text-gray-800 mt-1">40%</p>
+							</div>
+						</div>
+
+						<!-- Heuristic Info Box -->
+						<div
+							class="bg-green-50 border border-green-200 text-gray-700 rounded-lg p-4 text-sm leading-relaxed shadow-sm">
+							<p>
+								<span class="font-semibold">Heuristic logic:</span>
+								lowers price when competitors are cheaper with higher stock;
+								raises price on low stock; nudges price down for high inventory.
+							</p>
+						</div>
+
+					</div>
+				</div>
+
+				<!-- Chart.js Script -->
+				<script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+				<script>
+					const ctx2 = document.getElementById('priceSalesChart').getContext('2d');
+					new Chart(ctx2, {
+						type: 'line',
+						data: {
+							labels: ['₹73', '₹75', '₹77', '₹79', '₹81', '₹83', '₹85', '₹87', '₹89'],
+							datasets: [{
+								label: 'Predicted Sales',
+								data: [50, 65, 78, 90, 100, 88, 75, 60, 50],
+								fill: true,
+								borderColor: '#3b82f6',
+								backgroundColor: 'rgba(59,130,246,0.15)',
+								tension: 0.4,
+								pointBackgroundColor: '#3b82f6',
+								pointRadius: 3
+							}]
+						},
+						options: {
+							responsive: true,
+							scales: {
+								x: {
+									grid: { color: 'rgba(0,0,0,0.05)' },
+									ticks: { color: '#555', font: { size: 11 } }
+								},
+								y: {
+									beginAtZero: true,
+									grid: { color: 'rgba(0,0,0,0.05)' },
+									ticks: { color: '#555', font: { size: 11 } }
+								}
+							},
+							plugins: {
+								legend: { display: false }
+							}
+						}
+					});
+				</script>
+
+
+		</section>
+	</main>
+
+	<div id="footer"></div>
+
+	<script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+	<script src="https://unpkg.com/aos@2.3.4/dist/aos.js"></script>
+	<script src="script.js"></script>
+</body>
+
+</html>

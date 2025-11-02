@@ -1,0 +1,95 @@
+/* Tailwind is included via CDN. This file holds small custom styles and theme tokens. */
+
+:root {
+	--brand-primary: #6b8e23; /* olive drab */
+	--brand-accent: #4d7c0f; /* olive/moss */
+	--brand-gradient: linear-gradient(90deg, rgba(107,142,35,1) 0%, rgba(77,124,15,1) 100%);
+}
+
+html,
+body {
+	background:
+		/* soft olive dots pattern */
+		url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' width='28' height='28' viewBox='0 0 28 28'><circle cx='2' cy='2' r='1.2' fill='%23a3b18a' fill-opacity='0.35'/><circle cx='16' cy='10' r='1' fill='%2390a27a' fill-opacity='0.35'/><circle cx='8' cy='20' r='0.9' fill='%2390a27a' fill-opacity='0.3'/></svg>") repeat,
+		/* gentle radial glows */
+		radial-gradient(900px 600px at 5% -10%, rgba(107,142,35,0.12), transparent 60%),
+		radial-gradient(700px 500px at 110% 10%, rgba(77,124,15,0.10), transparent 60%),
+		#f4f8ec;
+	color: #0f172a; /* slate-900 */
+	scroll-behavior: smooth;
+}
+
+/* Smooth cards */
+.card {
+	background:
+		/* subtle stripes */
+		repeating-linear-gradient(45deg, rgba(76, 96, 60, 0.06) 0px, rgba(76, 96, 60, 0.06) 2px, transparent 2px, transparent 6px),
+		rgba(255, 255, 255, 0.78);
+	backdrop-filter: blur(6px);
+	-webkit-backdrop-filter: blur(6px);
+	box-shadow: 0 10px 30px rgba(2, 6, 23, 0.06);
+	transition: transform 200ms ease, box-shadow 200ms ease;
+}
+.card:hover {
+	transform: translateY(-2px);
+	box-shadow: 0 14px 40px rgba(2, 6, 23, 0.12);
+}
+
+.gradient-text {
+	background: var(--brand-gradient);
+	-webkit-background-clip: text;
+	background-clip: text;
+	color: transparent;
+}
+
+.btn-gradient {
+	background: var(--brand-gradient);
+	color: white;
+	box-shadow: 0 10px 20px rgba(107,142,35,0.25);
+}
+.btn-gradient:hover {
+	opacity: 0.95;
+}
+
+.nav-shadow {
+	box-shadow: 0 6px 24px rgba(15, 23, 42, 0.06);
+}
+
+.footer-link {
+	color: #475569; /* slate-600 */
+	transition: color 150ms ease;
+}
+.footer-link:hover {
+	color: #0f172a; /* slate-900 */
+}
+
+.input {
+	outline: none;
+	box-shadow: inset 0 0 0 1px rgba(15, 23, 42, 0.08);
+	transition: box-shadow 150ms ease;
+}
+.input:focus {
+	box-shadow: inset 0 0 0 2px rgba(107, 142, 35, 0.6);
+}
+
+.badge {
+	border-radius: 9999px;
+	padding: 0.125rem 0.5rem;
+	font-size: 0.75rem;
+	font-weight: 600;
+}
+.badge.in-stock { background: rgba(16,185,129,.12); color: #065f46; }
+.badge.low-stock { background: rgba(234,179,8,.15); color: #92400e; }
+.badge.out-of-stock { background: rgba(239,68,68,.12); color: #7f1d1d; }
+
+.table-sticky thead th {
+	position: sticky;
+	top: 0;
+	background: #ffffff;
+	z-index: 10;
+}
+
+.ai-box {
+	border: 1px dashed rgba(101,163,13,.5);
+	background: linear-gradient(180deg, rgba(107,142,35,0.06), rgba(77,124,15,0.06));
+}
