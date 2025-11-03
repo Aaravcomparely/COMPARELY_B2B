@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+	<title>Register — Comparely</title>
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+	<script src="https://cdn.tailwindcss.com"></script>
+	<link rel="stylesheet" href="styles.css" />
+	<link rel="stylesheet" href="https://unpkg.com/aos@2.3.4/dist/aos.css" />
+	<script>
+		tailwind.config = { theme: { extend: { fontFamily: { sans: ['Inter', 'ui-sans-serif', 'system-ui'] } } } };
+	</script>
+</head>
+<body class="font-sans antialiased">
+	<div id="navbar"></div>
+
+	<main class="pt-24">
+		<div class="max-w-lg mx-auto px-4 sm:px-6 lg:px-8">
+			<div class="text-center mb-8">
+				<h1 class="text-3xl font-bold">Create your account</h1>
+				<p class="text-slate-600">Register to access availability, competitor insights, and pricing strategies.</p>
+			</div>
+
+			<div class="card p-6 rounded-2xl" data-aos="fade-up">
+				<form id="register-form" class="space-y-4">
+					<div>
+						<label class="block text-sm font-medium text-slate-700">Brand name</label>
+						<input type="text" name="brand" class="mt-1 w-full input rounded-md px-3 py-2" placeholder="e.g., Brand A" required />
+					</div>
+					<div>
+						<label class="block text-sm font-medium text-slate-700">Email</label>
+						<input type="email" name="email" class="mt-1 w-full input rounded-md px-3 py-2" placeholder="you@brand.com" required />
+					</div>
+					<div>
+						<label class="block text-sm font-medium text-slate-700">Password</label>
+						<input type="password" name="password" class="mt-1 w-full input rounded-md px-3 py-2" placeholder="Minimum 6 characters" required />
+					</div>
+					<button type="submit" class="w-full btn-gradient rounded-md px-4 py-2 font-medium">Register</button>
+				</form>
+			</div>
+		</div>
+	</main>
+
+	<div id="footer"></div>
+
+	<script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+	<script src="https://unpkg.com/aos@2.3.4/dist/aos.js"></script>
+	<script src="script.js"></script>
+</body>
+</html>

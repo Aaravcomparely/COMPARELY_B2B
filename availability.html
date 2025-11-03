@@ -3,7 +3,7 @@
 <head>
 	<meta charset="UTF-8" />
 	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
-	<title>Competitors — Comparely</title>
+	<title>Availability — Comparely</title>
 	<link rel="preconnect" href="https://fonts.googleapis.com">
 	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 	<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
@@ -19,9 +19,14 @@
 
 	<main class="pt-24">
 		<div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-			<div class="mb-6">
-				<h1 class="text-2xl font-bold">Competitor Insights</h1>
-				<p class="text-slate-600">Compare with market alternatives across price and stock, and get AI-style recommendations.</p>
+			<div class="flex items-end justify-between gap-4 mb-6">
+				<div>
+					<h1 class="text-2xl font-bold">Product Availability</h1>
+					<p class="text-slate-600">Search by pincode or product. View stock status across darkstores.</p>
+				</div>
+				<div class="w-full sm:w-80">
+					<input id="availability-search" type="text" class="w-full input rounded-md px-3 py-2" placeholder="Search product or pincode..." />
+				</div>
 			</div>
 
 			<div class="grid lg:grid-cols-3 gap-6 items-start">
@@ -32,26 +37,17 @@
 								<tr>
 									<th class="px-3 py-2">Product</th>
 									<th class="px-3 py-2">Pincode</th>
-									<th class="px-3 py-2">Your Price</th>
-									<th class="px-3 py-2">Competitor A</th>
-									<th class="px-3 py-2">Competitor B</th>
-									<th class="px-3 py-2">Your Stock</th>
-									<th class="px-3 py-2">A Stock</th>
-									<th class="px-3 py-2">B Stock</th>
+									<th class="px-3 py-2">Status</th>
+									<th class="px-3 py-2">Stock</th>
 								</tr>
 							</thead>
-							<tbody id="competitor-rows" class="divide-y divide-slate-100"></tbody>
+							<tbody id="availability-rows" class="divide-y divide-slate-100"></tbody>
 						</table>
 					</div>
 				</div>
-				<div class="space-y-4">
-					<div class="card p-4 rounded-2xl" data-aos="fade-left">
-						<h3 class="font-semibold mb-3">Availability Comparison</h3>
-						<canvas id="competitors-chart" height="220"></canvas>
-					</div>
-					<div class="ai-box p-4 rounded-2xl text-slate-800" data-aos="fade-left">
-						<p class="text-sm" id="ai-reco">Loading recommendations…</p>
-					</div>
+				<div class="card p-4 rounded-2xl" data-aos="fade-left">
+					<h3 class="font-semibold mb-3">Stock by Pincode</h3>
+					<canvas id="availability-chart" height="260"></canvas>
 				</div>
 			</div>
 		</div>
